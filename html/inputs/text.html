@@ -33,15 +33,15 @@
             <label><input type="password" name="mypass" placeholder="Введите пароль" maxlength="5" minlength="3" required> Минимум 3 и максимум 5 символов</label>
             <input type="submit">
             <pre><kbd>&lt;label&gt;
-                &lt;input  type="password" 
-                name="mypass" 
-                placeholder="Введите пароль" 
-                maxlength="5" 
-                minlength="3" 
-                required
-                &gt; 
-                Минимум 3 и максимум 5 символов
-                &lt;/label&gt;</kbd></pre>
+    &lt;input  type="password" 
+        name="mypass" 
+        placeholder="Введите пароль" 
+        maxlength="5" 
+        minlength="3" 
+        required
+    &gt; 
+        Минимум 3 и максимум 5 символов
+&lt;/label&gt;</kbd></pre>
             </form>
             
             <h2>Email</h2>
@@ -65,7 +65,22 @@
  &lt;/label&gt;</kbd></pre>
         </form>
 
-       <h2>Url</h2>
+        <h2>Tel</h2>
+        <p>Элемент для ввода телефонных номеров.</p>
+        <p>Возможно настроить валидацию с помощью атрибута <mark>pattern</mark></p>
+        <p>Возможно задать максимальную длинну помощью атрибута <mark>maxlength </mark></p>
+
+        <form action="#" method="get">
+            <label> Введите число <input type="tel" name="my-tel" maxlength="13"></label>
+            <input type="submit" value="Send">
+        </form>
+        <pre><kbd>&lt;label&gt; Введите число 
+    &lt;input type="tel" 
+    name="my-tel"
+    maxlength="13"&gt;
+&lt;/label&gt;</kbd></pre>
+
+       <!-- <h2>Url</h2>
        <ul>
            <li>Разновидность типа Text.</li>
            <li>Введенный url безопасный - по нему нельзя осуществить переход без преобразований строки программой.</li>
@@ -85,7 +100,7 @@
      &gt; 
      Url к коспекту теории
  &lt;/label&gt;</kbd></pre>
-        </form>
+        </form> -->
     </div>
     <a class="back" href="../input.html">back</a>
 </body>
