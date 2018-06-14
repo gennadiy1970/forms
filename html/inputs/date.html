@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/input.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h3>Date</h3>
+        <p>Генерирует пару name=value, где значение/value  - это дата в виде строки год-месяц-день "2018-06-14"</p>
+        <form action="#" method="get">
+            <label> Выбирите дату <input type="date" name="mydate"></label>
+            <input type="submit" value="Send">
+        </form>
+        <pre><kbd>&lt;label&gt; Выбирите дату &lt;input type="date" name="mydate"&gt;&lt;/label&gt;</kbd></pre>
+        <h3>Time</h3>
+        <p>Генерирует пару name=value, где значение/value  - это время в виде строки час:минуты "12%3A10"</p>
+        <form action="#" method="get">
+            <label> Выбирите время <input type="time" name="mytime"></label>
+            <input type="submit" value="Send">
+        </form>
+        <pre><kbd>&lt;label&gt; Выбирите время &lt;input type="time" name="mytime"&gt;&lt;/label&gt;</kbd></pre>
+        <h3>Week</h3>
+        <p>Генерирует пару name=value, где значение/value  - это номер недели без учета часового пояса в виде строки год-номер недели "2018-W22"</p>
+        <form action="#" method="get">
+            <label> Выбирите неделю <input type="week" name="myweek"></label>
+            <input type="submit" value="Send">
+        </form>
+        <pre><kbd>&lt;label&gt; Выбирите неделю &lt;input type="week" name="myweek"&gt;&lt;/label&gt;</kbd></pre>
+        <h3>Month</h3>
+        <p>Генерирует пару name=value, где значение/value  - это номер месяца без учета часового пояса в виде строки год-номер месяца "2018-06"</p>
+        <form action="#" method="get">
+            <label> Выбирите месяц <input type="month" name="mymonth"></label>
+            <input type="submit" value="Send">
+        </form>
+        <pre><kbd>&lt;label&gt; Выбирите месяц &lt;input type="month" name="mymonth"&gt;&lt;/label&gt;</kbd></pre>
+        <h3>datetime-local</h3>
+        <p>Генерирует пару name=value, где значение/value  - это локальные дата и время в виде строки год-месяц-день час:минуты "2018-06-14T12%3A10"</p>
+        <form action="#" method="get">
+            <label> Выбирите локальную дату и время <input type="datetime-local" name="my-dt-locale"></label>
+            <input type="submit" value="Send">
+        </form>
+        <pre><kbd>&lt;label&gt; Выбирите локальную дату и время 
+    &lt;input type="datetime-local" name="my-dt-locale"&gt;
+&lt;/label&gt;</kbd></pre>
+        
+    </div>
+    <a class="back" href="../input.html">back</a>
+</body>
+</html>

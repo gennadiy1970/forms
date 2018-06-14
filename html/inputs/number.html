@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/input.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Number</h2>
+        <p>Элемент для ввода числа.</p>
+
+        <form action="#" method="get">
+            <label> Введите число <input type="number" name="my-number"></label>
+            <input type="submit" value="Send">
+        </form>
+        <pre><kbd>&lt;label&gt; Введите число 
+    &lt;input type="number" 
+    name="my-number"&gt;
+&lt;/label&gt;</kbd></pre>
+            <h4>атрибуты</h4>
+            <ul>
+                <li><kbd>max</kbd> максимальное значение</li>
+                <li><kbd>min</kbd> минимальное значение</li>
+                <li><kbd>step</kbd> шаг</li>
+            </ul>
+
+            <form action="#" method="get">
+                    <label> Введите число 
+                        <input type="number" 
+                                name="my-number" 
+                                max="3.5"
+                                min="-3.5"
+                                step=".25">
+                    </label>
+                    <input type="submit" value="Send">
+                </form>
+                <pre><kbd>&lt;label&gt; Введите число 
+            &lt;input type="number" 
+            name="my-number"
+            max="3.5"
+            min="-3.5"
+            step=".25"
+            &gt;
+        &lt;/label&gt;</kbd></pre>   
+        <h3>Range</h3>         
+        <p>Изменения вида для ввода числа - вместо поля для ввода используется ползунок</p>
+        <form action="#" method="get">
+                <label> Введите число 
+                    <input type="range" 
+                            name="my-range" 
+                            max="3.5"
+                            min="-3.5"
+                            step=".25">
+                </label>
+                <input type="submit" value="Send">
+            </form>
+            <pre><kbd>&lt;label&gt; Введите число 
+        &lt;input type="range" 
+        name="my-range"
+        max="3.5"
+        min="-3.5"
+        step=".25"
+        &gt;
+    &lt;/label&gt;</kbd></pre>
+
+
+    </div>
+    <a class="back" href="../input.html">back</a>
+</body>
+</html>

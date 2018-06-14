@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/input.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>File</h2>
+        <p>Элемент, который позволяет пользователю выбрать файл.</p>
+        <h4>атрибут <mark>accept</mark></h4>
+        <p> выбор типа файла <span class="comment">// частичная поддержка браузерами</span></p>
+        <p>пример: <kbd>accept="text/css"</kbd></p>
+        <p>Медиатипы</p>            
+        <ul>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#application" target="_blank">application</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#audio" target="_blank">audio</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#font" target="_blank">font</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#example" target="_blank">example</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#example" target="_blank">example</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#image" target="_blank">image</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#message" target="_blank">message</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#model" target="_blank">model</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#multipart" target="_blank">multipart</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#text" target="_blank">text</a></li>
+                <li><a href="http://www.iana.org/assignments/media-types/media-types.xhtml#video" target="_blank">video</a></li>
+            </ul>
+        <form action="#" method="get">
+            <label><input type="file" name="my-file"> Выбирите любой файл</label>
+            <label><input type="file" name="my-css" accept="text/css"> Выбирите файл css</label>
+            <pre><kbd>&lt;label&gt;
+                &lt;input  type="file" 
+                name="my-file"
+                &gt; 
+                Выбирите любой  
+&lt;/label&gt;
+&lt;label&gt;
+                &lt;input  type="file" 
+                name="my-css"
+                <mark>accept="text/css" </mark>
+                &gt; 
+                Выбирите файл css
+                &lt;/label&gt;</kbd></pre>
+            </form>
+    </div>
+    <a class="back" href="../input.html">back</a>
+</body>
+</html>

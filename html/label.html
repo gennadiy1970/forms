@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>label</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/label.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>label</h2>
+        <p>Подпись к элементу форм.</p>
+        <h4>Способы связать label с form</h4>
+        <ul>
+            <li>расположить label с элементом внутри тега form</li>
+            <li>связать атрибут label <mark>for</mark> с <mark>id</mark> тега form
+                <pre><kbd>&lt;form <mark>id="myid"</mark> ... &gt; ... &lt;/form&gt;
+&lt;label <mark>form="myid"</mark>&gt; Текст &lt;input type="text"&gt; &lt;/label&gt;</kbd></pre>
+            </li>
+        </ul>
+
+
+        <h4>Способы связать элемент с label</h4>
+        <ul>
+            <li>расположить элемент внутри тега label
+                <pre><kbd>&lt;label&gt; Текст &lt;input type="text"&gt; &lt;/label&gt;</kbd></pre>
+            </li>
+            <li>использовать атрибут <kbd>for=</kbd> id элемента
+                <pre><kbd>&lt;label <mark>for="myid"</mark>&gt; Текст  &lt;/label&gt;
+&lt;input type="text" <mark>id="myid"</mark>&gt;
+                </kbd></pre>
+            </li>
+        </ul> 
+        <h4>Способы разместить текст слева и справа от элемента</h4>
+        <ul>
+            <li><h5>Перестановка текста внутри label</h5>
+        <label>Текст слева <input type="text" placeholder="Введите текст"></label> 
+                <pre><kbd>&lt;label&gt; Текст слева &lt;input type="text" placeholder="Введите текст"&gt; &lt;/label&gt;</kbd></pre>
+        <label><input type="text" placeholder="Введите текст"> Текст справа</label> 
+                <pre><kbd>&lt;label&gt; &lt;input type="text" placeholder="Введите текст"&gt; Текст справа &lt;/label&gt;</kbd></pre>
+            </li>
+            <li><h5>Перестановка label по отношению к элементу</h5>
+                <ul>
+                    <li>
+                        <label for="myid2"> Текст  </label>
+                        <input type="text" id="myid2" placeholder="Введите текст">
+                        <pre><kbd>&lt;label <mark>for="myid"</mark>&gt; Текст  &lt;/label&gt;
+&lt;input type="text" <mark>id="myid"</mark> placeholder="Введите текст"&gt;</kbd></pre>
+                    </li>
+                    <li>
+                        <input type="text" id="myid3" placeholder="Введите текст">
+                        <label for="myid3"> Текст  </label>
+                        <pre><kbd>&lt;input type="text" <mark>id="myid"</mark> placeholder="Введите текст"&gt;
+&lt;label <mark>for="myid"</mark>&gt; Текст  &lt;/label&gt;
+                               </kbd></pre>   
+
+                    </li>
+                </ul>
+            </li>
+        </ul>                
+    </div>
+    <a class="back" href="../index.html">back</a>
+</body>
+</html>

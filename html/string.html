@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/string.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Строка HTML запроса</h2>
+        <p>Приложения должны суметь из­влечь данные из строки запроса, поэтому строка имеет определенный синтаксис.</p>
+        <kbd> <mark>https://</mark>aplication.com/<mark>?</mark>user<mark>+</mark>name<mark>=</mark>Homer<mark>&amp;</mark>password<mark>=</mark>qwerty<mark>%5E</mark></kbd>
+        <ul>
+            <li><kbd>https</kbd> протокол добавит номер порта в запрос <span class="comment">// :80 для http и :443 для https</span></li>
+            <li><kbd>?</kbd> разделитель: слева адрес получателя данных, а справа пары данных <mark>name=value</mark> <span class="comment">// имя=значение</span></li>
+            <li><kbd>&amp;</kbd> разделитель пар данных</li>
+            <li><kbd>+</kbd> символ пробела</li>
+            <li><kbd>%</kbd> служеб­ные символы, кириллица и т.п. будут переданы в виде символа процента, за которым следует шестнадцатеричное значение соответствующего символа <a href="http://sitear.ru/material/ascii-kody" target="_blank">ASCII</a></li>
+        </ul>
+        <p>Строка HTML запроса обрабатывается сервером и возвращает результат</p>
+        <h4>Пример: строка покажет курс валют на заданную дату</h4>
+        <a href="https://api.privatbank.ua/p24api/exchange_rates?json&date=14.06.2017 " target="_blank"><kbd>https://api.privatbank.ua/p24api/exchange_rates?json&date=14.06.2017 </kbd></a>
+
+        <h4>Работу по составлению сток браузер делает самостоятельно с помощью элементов форм.</h4>
+        <a class="back" href="../index.html">back</a>
+       
+    </div>
+</body>
+</html>

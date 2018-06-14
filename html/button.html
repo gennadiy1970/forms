@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/button.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>button</h2>
+        <h4>Тег button с атрибутами</h4>
+        <ul>
+            <li><kbd>type="submit"</kbd> формирование строки и отправка запроса</li>
+            <li><kbd>type="reset"</kbd> сброс данных, введенных пользователем</li>
+        </ul> 
+        <h4>пример</h4>
+        <form action="#" method="get">
+            <label for="name"><input type="text" name="name" id="name" placeholder="Введите имя">Имя</label>
+            <label for="lastname"><input type="text" name="lastname" id="lastname" placeholder="Введите фамилию">Фамилия</label>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+            <pre><kbd>&lt;button type="submit"&gt;Send&lt;/button&gt;</kbd></pre>
+            <pre><kbd>&lt;button type="reset"&gt;Reset&lt;/button&gt;</kbd></pre>
+        </form>
+        <h4>Тег input c атрибутом button</h4>
+        <p>Кнопка без предопределенного поведения</p>
+        <input type="button" value="Ok">
+        <pre><kbd>&lt;input type="button" value="Ok"&gt;</kbd></pre>
+    </div>
+    <a class="back" href="../index.html">back</a>
+</body>
+</html>

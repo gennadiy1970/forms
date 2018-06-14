@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/input.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Text</h2>
+        <ul>
+            <li>Однострочное текстовое поле.</li>
+            <li>Служит для генерации пар "ключ-значение" со значением в виде текста, внесенного пользователем.</li>
+            <li>Разрывы перевода строки автоматически удаляются из входного значения.</li>
+            <li>атрибут <kbd>placeholder</kbd> служит для подсказки пользователю что именно нужно вводить. Исчезает при вводе текста пользователем</li>
+            <li>атрибут <kbd>value</kbd> служит значением по умолчанию. Не исчезает при вводе текста пользователем.</li>
+            <li>атрибут <kbd>maxlength</kbd> необязательный атрибут. Ограничивает длину строки.</li>
+        </ul>
+        <input type="text" placeholder="placeholder">
+        <input type="text" value="value">
+        <h2>Password</h2>
+        <ul>
+            <li>Разновидность типа Text.</li>
+            <li>При вводе пароля на экране отображает символ <kbd>*</kbd></li>
+            <li>атрибут <kbd>maxlength</kbd> рекомендуется к использованию.</li>
+            <li>атрибут <kbd>required</kbd> рекомендуется к использованию.</li>
+        </ul>
+        <form action="#" method="get">
+            <label><input type="password" name="mypass" placeholder="Введите пароль" maxlength="5" minlength="3" required> Минимум 3 и максимум 5 символов</label>
+            <input type="submit">
+            <pre><kbd>&lt;label&gt;
+                &lt;input  type="password" 
+                name="mypass" 
+                placeholder="Введите пароль" 
+                maxlength="5" 
+                minlength="3" 
+                required
+                &gt; 
+                Минимум 3 и максимум 5 символов
+                &lt;/label&gt;</kbd></pre>
+            </form>
+            
+            <h2>Email</h2>
+            <ul>
+                <li>Разновидность типа Text.</li>
+                <li>Для ввода и редактирования email</li>
+                <li>автоматическая валидации адреса <span class="comment">// проверка на наличие @</span></li>
+                <li>атрибут <kbd>required</kbd> рекомендуется к использованию.</li>
+            </ul>
+            <form action="#" method="get">
+            <label><input type="email" name="my-email" size="42" placeholder="Введите email" required> Ваш email</label>
+             <input type="submit">
+             <pre><kbd>&lt;label&gt;
+     &lt;input  type="email" 
+             name="my-email" 
+             size="42"
+             placeholder="Введите email"
+             required
+     &gt; 
+     Ваш email
+ &lt;/label&gt;</kbd></pre>
+        </form>
+
+       <h2>Url</h2>
+       <ul>
+           <li>Разновидность типа Text.</li>
+           <li>Введенный url безопасный - по нему нельзя осуществить переход без преобразований строки программой.</li>
+           <li>При вводе URL происходит валидация и замена спецсимволов кодом ASCII</li>
+           <li>атрибут <kbd>pattern </kbd> используется для шаблона валидации.</li>
+      </ul>
+      <form action="#" method="get">
+            <label><input type="url" name="myurl" size="42" placeholder="Введите url" value="http://fecore.net.ua/theory/module-1.html" minlength="40"> Url к коспекту теории</label>
+             <input type="submit">
+             <pre><kbd>&lt;label&gt;
+     &lt;input  type="url" 
+             name="myurl" 
+             placeholder="Введите url"
+             value="http://fecore.net.ua/theory/module-1.html" 
+             minlength="40"
+             size="42"
+     &gt; 
+     Url к коспекту теории
+ &lt;/label&gt;</kbd></pre>
+        </form>
+    </div>
+    <a class="back" href="../input.html">back</a>
+</body>
+</html>

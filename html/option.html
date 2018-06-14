@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>option</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/option.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>select</h2>
+        <p>элемент с выбором опций</p>
+        
+<select name="select"> 
+    <option value="css">CSS</option> 
+    <option value="html">HTML</option>
+    <option value="js">JavaScript</option>
+</select>
+<pre><kbd>&lt;select name="select"&gt; 
+    &lt;option value="css"&gt;CSS&lt;/option&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="js"&gt;JavaScript&lt;/option&gt;
+&lt;/select&gt;
+        </kbd></pre>
+
+        <h2>datalist</h2>
+        <p>элемент содержащий возможные опции для выбора элемента input с атрибутом list</p>
+        <label for="myBrowser">Выбор браузера</label>
+        <input list="browsers" id="myBrowser" name="myBrowser" /> 
+        <datalist id="browsers">
+          <option>Chrome</option>
+          <option>Firefox</option>
+          <option>Internet Explorer</option>
+          <option>Opera</option>
+          <option>Safari</option>
+          <option>Microsoft Edge</option>
+        </datalist>
+<pre><kbd>&lt;label for="myBrowser"&gt;Выбор браузера&lt;/label&gt;
+    &lt;input list="browsers" id="myBrowser" name="myBrowser" /&gt; 
+    &lt;datalist id="browsers"&gt;
+        &lt;option&gt;Chrome&lt;/option&gt;
+        &lt;option&gt;Firefox&lt;/option&gt;
+        &lt;option&gt;Internet Explorer&lt;/option&gt;
+        &lt;option&gt;Opera&lt;/option&gt;
+        &lt;option&gt;Safari&lt;/option&gt;
+        &lt;option&gt;Microsoft Edge&lt;/option&gt;
+&lt;/datalist&gt;
+
+</kbd></pre>
+        <h2>option</h2>
+        <ul>
+            <li><kbd>option</kbd> используется для определения пункта списка контейнера <mark>select</mark>, <mark>optgroup</mark> и <mark>datalist</mark> 
+                <ul>
+                    <li><kbd>value</kbd> <span class="comment"> // не обязательный атрибут. Если отсутствует, то значение берется из текста </span></li>
+                    <li><kbd>selected</kbd> <span class="comment"> // не обязательный атрибут. Выделяет значение по умолчанию </span></li>
+                    <li><kbd>disabled</kbd> <span class="comment"> // не обязательный атрибут. Делает опцию недоступной для выделения </span></li>
+                    <li><kbd>label </kbd> <span class="comment"> // не обязательный атрибут. Если отсутствует, то значение берется из текста </span></li>
+                </ul>
+            </li>
+        </ul> 
+    
+    <h4>optgroup, select, option</h4>
+    <form action="#" method="get">
+        <select>
+            <optgroup label="Группа 1">
+              <option>Frontend</option>
+            </optgroup> 
+            <optgroup label="Группа 2">
+              <option value="CSS">CSS</option>
+              <option selected >HTML</option>
+            </optgroup>
+            <optgroup label="Группа 3" disabled>
+              <option>JavaScript</option>
+              <option>React</option>
+              <option>Angular</option>
+            </optgroup>
+        </select>
+        <button type="reset">reset</button>
+        <button type="submit">send</button>
+    </form>
+    <pre><kbd>&lt;select&gt;
+    &lt;optgroup <mark>label</mark>="Группа 1"&gt;
+        &lt;option&gt;Frontend&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="Группа 2"&gt;
+        &lt;option <mark>value</mark>="CSS"&gt;CSS&lt;/option&gt;
+        &lt;option&gt; <mark>selected</mark> ;HTML&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="Группа 3" <mark>disabled</mark>&gt;
+        &lt;option&gt;JavaScript&lt;/option&gt;
+        &lt;option&gt;React&lt;/option&gt;
+        &lt;option&gt;Angular&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</kbd></pre>
+</div>
+    <a class="back" href="../index.html">back</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radio &amp; Checkbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/input.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Radio &amp; Checkbox</h2>
+        <ul>
+            <li>Требует использования атрибута value для определения значения, которое будет отдано этим элементом</li>
+            <li>Используйте атрибут <mark>checked</mark>, чтобы указать, должен ли флажок быть выставлен</li>
+            <li>Используйте атрибут <mark>disabled</mark>, чтобы данный input нельзя было выбрать</li>
+            <li>стилизация стандартным способом невозможна. Существуют трюки с помощью CSS или JS + CSS</li>
+        </ul>
+        <h4>radio</h4>
+        <form action="#" method="get" class="db-label">
+            <h5>Выбирите один цвет:</h5>
+            <label>red   <input type="radio" name="color" value="red"></label>
+            <label>green <input type="radio" name="color" value="green" checked></label>
+            <label>blue  <input type="radio" name="color" value="blue"></label>
+            <label class="comment">black <input type="radio" name="color" value="black" disabled></label>
+            <input type="submit" value="send">
+            <input type="reset" value="reset">
+        </form>
+        <h4>checkbox</h4>
+        <form action="#" method="get" class="db-label">
+            <h5>Выбирите несколько цветов:</h5>
+            <label>red   <input type="checkbox" name="colors" value="red"></label>
+            <label>green <input type="checkbox" name="colors" value="green" checked></label>
+            <label>blue  <input type="checkbox" name="colors" value="blue"></label>
+            <label class="comment">black <input type="checkbox" name="colors" value="black" disabled></label>
+            <input type="submit" value="send">
+            <input type="reset" value="reset">
+        </form>
+        
+    </div>
+    <a class="back" href="../input.html">back</a>
+</body>
+</html>
