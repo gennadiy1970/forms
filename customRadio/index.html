@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Custom Radio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Choose one technology</h2>
+      <form action="#" method="post">
+        <input
+          class="input"
+          id="html"
+          type="radio"
+          name="technology"
+          value="HTML"
+        />
+        <label class="label" for="html"> HTML </label>
+        <input
+          class="input"
+          id="css"
+          type="radio"
+          name="technology"
+          value="CSS"
+        />
+        <label class="label" for="css"> CSS </label>
+        <input
+          class="input"
+          id="js"
+          type="radio"
+          name="technology"
+          value="JS"
+        />
+        <label class="label" for="js"> JS </label>
+        <input
+          class="input"
+          id="react"
+          type="radio"
+          name="technology"
+          value="React"
+        />
+        <label class="label" for="react"> React </label>
+      </form>
+    </div>
+    <div class="wrapper">
+      Более продвинутый <a href="./cool.html">вариант верстки radio/checkbox</a>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fieldset</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Fieldset &amp; legend</h2>
+      <p>
+        Эти теги предназначены для семантической группироваки форм. Программы
+        для автоматического чтения ориентируюся на данные теги.
+      </p>
+      <p>
+        <kbd>Fieldset</kbd> рзмещается внутри <i>form</i> и с помощью
+        <kbd>legend</kbd> объявляет о значении элементов <i>form</i>. В то время
+        как <kbd>label</kbd> сообщает о значении поля. Очень важно чтобы тексты
+        <kbd>label</kbd> и <kbd>legend</kbd> не совпадали, а если такое может
+        произойти, значит стоит отказаться от <kbd>legend</kbd>
+      </p>
+      <h4>Пример (из MDN)</h4>
+      <pre><code>
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Fruit juice size&lt;/legend&gt;
+    &lt;p&gt;
+      &lt;input type="radio" name="size" id="size_1" value="small"&gt;
+      &lt;label for="size_1"&gt;Small&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;input type="radio" name="size" id="size_2" value="medium"&gt;
+      &lt;label for="size_2"&gt;Medium&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;input type="radio" name="size" id="size_3" value="large"&gt;
+      &lt;label for="size_3"&gt;Large&lt;/label&gt;
+    &lt;/p&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+        </code></pre>
+    </div>
+    <a class="back" href="../index.html">back</a>
+  </body>
+</html>

@@ -1,49 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/form.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <h2>form</h2>
-        <h4>Этот тег предназначен для:</h4>
-        <ol>
-            <li>группировки элементов форм для формирования строки запроса <span class="comment">// каждый элемент form формирует собственную строку</span></li>
-            <li>хранении в атрибутах информации для формровании строки запроса</li>
-            <li>передавать информацию о валидности запроса</li>
-        </ol>
-        <h4>группировка элементов</h4>
-        <ul>
-            <li>все теги, находящиеся внутри <kbd>&lt;form&gt;&lt;/form&gt;</kbd> связаны с данной формой</li>
-            <li>теги форм input, находящиеся <i>ВНЕ</i> формы можно свзять с формой с помощью одинакового значения атрибута <mark>id</mark> формы и атрибута <mark>form</mark> инпута
-                <pre><kbd> &lt;form ... <mark>id="my_id"</mark>&gt;
+      <h2>form</h2>
+      <h4>Этот тег предназначен для:</h4>
+      <ol>
+        <li>
+          группировки элементов форм для формирования строки запроса
+          <span class="comment"
+            >// каждый элемент form формирует собственную часть строки HTML
+            запроса</span
+          >
+        </li>
+        <li>хранении в атрибутах информации для формровании строки запроса</li>
+        <li>передавать информацию о валидности запроса</li>
+      </ol>
+      <p>Нельзя размещать <b>form</b> внутри другого элемента <b>form</b></p>
+      <h4>группировка элементов</h4>
+      <ul>
+        <li>
+          все теги, находящиеся внутри
+          <kbd>&lt;form&gt;&lt;/form&gt;</kbd> связаны с данной формой
+        </li>
+        <li>
+          теги форм input, находящиеся <i>ВНЕ</i> формы можно свзять с формой с
+          помощью одинакового значения атрибута <mark>id</mark> формы и атрибута
+          <mark>form</mark> инпута
+          <pre><kbd> &lt;form ... <mark>id="my_id"</mark>&gt;
  &lt;/form&gt;
 &lt;input ... <mark>form="my_id"</mark>&gt;</kbd></pre>
+        </li>
+      </ul>
+      <h4>атрибуты для формровании строки запроса</h4>
+      <ul>
+        <li>
+          <kbd>action=</kbd> адрес запроса
+          <span class="comment"> // включая протокол</span>
+        </li>
+        <li>
+          <kbd>method=</kbd> способ передачи данных
+          <ul>
+            <li>
+              GET - значение по умолчанию. Использовать только если данные
+              содержат ASCII символы. Не использовать для важной,
+              конфеденциальной информации
             </li>
-        </ul>
-        <h4>атрибуты для формровании строки запроса</h4>
-        <ul>
-            <li><kbd>action=</kbd> адрес запроса <span class="comment"> // включая протокол</span></li>
-            <li><kbd>method=</kbd> способ передачи данных 
-                <ul>
-                    <li>GET - значение по умолчанию. Использовать только если данные содержат ASCII символы. Не использовать для важной, конфеденциальной информации</li>
-                    <li>POST - данные передаются в теле запроса, а не в самой строке. </li>
-                </ul>
+            <li>
+              POST - данные передаются в теле запроса, а не в самой строке.
             </li>
-        </ul>
-        <h4>Валидность</h4>
-        <ul>
-            <li>валидация формы происходит по умолчанию</li>
-            <li><kbd>novalidate </kbd> атрибут, отключающий валидацию</li>
-            <li>CSS псевдоклассы <kbd>:valid</kbd> и <kbd>:invalid</kbd> позволяют визуально оформить валидный и не валидный запрос</li>
-        </ul>
+          </ul>
+        </li>
+      </ul>
+      <h4>Валидность</h4>
+      <ul>
+        <li>валидация формы происходит по умолчанию</li>
+        <li><kbd>novalidate </kbd> атрибут, отключающий валидацию</li>
+        <li>
+          CSS псевдоклассы <kbd>:valid</kbd> и <kbd>:invalid</kbd> позволяют
+          визуально оформить валидный и не валидный запрос
+        </li>
+      </ul>
     </div>
     <a class="back" href="../index.html">back</a>
-</body>
+  </body>
 </html>
